@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Tahoma;
+    background:#ddd;
+    margin:0;
+   
+
+   }
+   
+   .center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+   }
+   
+   .login-box {
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    animation: pop .4s ease;
+   }
+   
+   .login-box input, button {
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+   }
+
+  
+   /* .chat-container{
+    background-color: #767676;
+    width: 900px;
+    margin: 20px auto;
+
+   } */
+   .chat-container {
+    width:860px;
+    height:1000px;
+    margin:20px auto;
+    background: #767676;
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    overflow:hidden;
+    padding:-10px;
+  }
+  
+   
+   #chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-right: 90px;
+ 
+  }
+
+  #chat-header {
+    background:#075e54;
+    color:white;
+    padding:15px;
+    text-align:center;
+  }
+
+  
+
+  .chat-input {
+    display:flex;
+    align-items:center;
+    padding:8px;
+    background:#f0f0f0;
+  }
+  
+  /* صف الرسالة */
+  .message-row {
+    display: flex;
+  }
+  
+  /* يمين */
+  .message-row.me {
+    justify-content: flex-end;
+  }
+  
+  /* يسار */
+  .message-row.other {
+    justify-content: flex-start;
+  }
+  
+  /* الفقاعة نفسها */
+  .message {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  /* رسائلك */
+  .message.me {
+    background: #dcf8c6;
+    border-bottom-right-radius: 3px;
+    padding: 15px;
+    font-size: 34px;
+  }
+  
+  /* رسائل الطرف الآخر */
+  .message.other {
+    background: #ffffff;
+    border-bottom-left-radius: 3px;
+    padding: 15px;
+    font-size: 34px;
+  }
+  
+  /* الصور */
+  .message img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-top: 5px;
+  }
+  /* .chat-input button{
+    background-color: green;
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    width: 200px;
+    border-radius: 15px;
+  } */
+  .chat-input input[type="text"]{
+    flex:1;
+    border: none;
+    width: 500px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    padding: 15px;
+    background-color: #d4d4d4;
+    font-weight: 500;
+    outline:none;
+
+}
+
+.chat-input button {
+    width:45px;
+    border:none;
+    border-radius:50%;
+    background:#075e54;
+    color:white;
+    font-size:18px;
+    margin-left:5px;
+    cursor:pointer;
+  }
+
+ 
+  
+  
+   
